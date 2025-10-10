@@ -6,9 +6,16 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
+      char estado;
+      char codcarta[3];
+      char nome[20];
+      int populacao;
+      float areakm;
+      float pib;
 
   // Área para entrada de dados
-
+      printf("Carta 1\n");
+      printf("Insira o estado:\n");
   // Área para exibição dos dados da cidade
 
 return 0;
