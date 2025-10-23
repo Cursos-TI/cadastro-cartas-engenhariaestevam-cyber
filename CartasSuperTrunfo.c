@@ -64,6 +64,9 @@ int main() {
       printf("Insira o número de pontos turísticos:\n");
       scanf("%d", &pontotur2);
 
+      denspop2 = populacao2 / area2;
+      pibcapta2 = pib2 / populacao2;
+
   // Área para exibição dos dados da cidade
 
       printf("Seguem os dados inseridos da Carta 1:\n");
@@ -74,7 +77,7 @@ int main() {
       printf("Área: %.3f\n", area1);
       printf("PIB: %.3f\n", pib1);
       printf("Pontos Turísticos: %d\n", pontotur1);
-      printf("Densidade: %.3f\n", denspop1);
+      printf("Densidade: %.9f\n", denspop1);
 
           printf("Seguem os dados inseridos da Carta 2:\n");
       printf("Estado: %c\n", estado2);
@@ -84,6 +87,7 @@ int main() {
       printf("Área: %.3f\n", area2);
       printf("PIB: %.3f\n", pib2);
       printf("Pontos Turísticos: %d\n", pontotur2);
+      printf("Densidade: %.9f\n", denspop2);
 
 
 return 0;
