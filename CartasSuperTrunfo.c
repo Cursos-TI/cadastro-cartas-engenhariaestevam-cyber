@@ -69,8 +69,8 @@ int main() {
 
   // Área para exibição dos dados da cidade
 
-      printf("Seguem os dados inseridos da Carta 1:\n");
-      printf("Estado: %c\n", estado1);
+      printf("\nSeguem os dados da Carta 1:\n");
+      printf("\nEstado: %c\n", estado1);
       printf("Código da carta: %s\n", codcarta1);
       printf("nome da cidade: %s\n", nome1);
       printf("População: %d\n", populacao1);
@@ -78,9 +78,10 @@ int main() {
       printf("PIB: %.3f\n", pib1);
       printf("Pontos Turísticos: %d\n", pontotur1);
       printf("Densidade: %.9f\n", denspop1);
+      printf("PIB per capta: %.6f\n", pibcapta1);
 
-          printf("Seguem os dados inseridos da Carta 2:\n");
-      printf("Estado: %c\n", estado2);
+          printf("\nSeguem os dados da Carta 2:\n");
+      printf("\nEstado: %c\n", estado2);
       printf("Código da carta: %s\n", codcarta2);
       printf("nome da cidade: %s\n", nome2);
       printf("População: %d\n", populacao2);
@@ -88,6 +89,7 @@ int main() {
       printf("PIB: %.3f\n", pib2);
       printf("Pontos Turísticos: %d\n", pontotur2);
       printf("Densidade: %.9f\n", denspop2);
+      printf("PIB per capta: %.6f\n", pibcapta2);
 
 
 return 0;
