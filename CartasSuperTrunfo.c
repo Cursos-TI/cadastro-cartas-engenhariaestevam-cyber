@@ -15,6 +15,7 @@ int main() {
       int pontotur1, pontotur2;
       float denspop1,denspop2;
       float pibcapta1, pibcapta2;
+      int resultadopopulacao1;
 
   // Área para entrada de dados
       printf("Cadastro da carta 1\n");
@@ -66,6 +67,7 @@ int main() {
 
       denspop2 = populacao2 / area2;
       pibcapta2 = pib2 / populacao2;
+      resultadopopulacao1 = populacao1 > populacao2;
 
   // Área para exibição dos dados da cidade
 
@@ -80,7 +82,7 @@ int main() {
       printf("Densidade: %.9f\n", denspop1);
       printf("PIB per capta: %.6f\n", pibcapta1);
 
-          printf("\nSeguem os dados da Carta 2:\n");
+      printf("\nSeguem os dados da Carta 2:\n");
       printf("\nEstado: %c\n", estado2);
       printf("Código da carta: %s\n", codcarta2);
       printf("nome da cidade: %s\n", nome2);
@@ -90,6 +92,9 @@ int main() {
       printf("Pontos Turísticos: %d\n", pontotur2);
       printf("Densidade: %.9f\n", denspop2);
       printf("PIB per capta: %.6f\n", pibcapta2);
+
+      printf("\nResultado da comparação de cartas:\n");
+      printf("\nPopulação: %d\n", resultadopopulacao1);
 
 
 return 0;
