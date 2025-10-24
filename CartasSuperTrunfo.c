@@ -15,7 +15,7 @@ int main() {
       int pontotur1, pontotur2;
       float denspop1,denspop2;
       float pibcapta1, pibcapta2;
-      int resultadopopulacao1, resultadopopulacao2;
+      int resultadopopulacao;
 
   // Área para entrada de dados
       printf("Cadastro da carta 1\n");
