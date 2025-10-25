@@ -9,13 +9,17 @@ int main() {
       char estado1, estado2;
       char codcarta1[3], codcarta2[3];
       char nome1[20], nome2[20];
-      int populacao1, populacao2;
-      float area1, area2;
-      float pib1, pib2;
-      int pontotur1, pontotur2;
-      float denspop1,denspop2;
-      float pibcapta1, pibcapta2;
+      int populacao1, populacao2, pontotur1, pontotur2; 
+      float area1, area2, pib1, pib2, denspop1,denspop2, pibcapta1, pibcapta2;
       int resultadopopulacao;
+      int resultadoarea;
+      int resultadopib;
+      int resultadopontotur;
+      int resultadodensidade;
+      int resultadopibcapta;
+      int superpoder;
+      int invdensidade;
+
 
   // Área para entrada de dados
       printf("Cadastro da carta 1\n");
@@ -67,7 +71,12 @@ int main() {
 
       denspop2 = populacao2 / area2;
       pibcapta2 = pib2 / populacao2;
-      resultadopopulacao1 = populacao1 > populacao2;
+      resultadopopulacao = populacao1 > populacao2;
+      resultadoarea = area1 > area2;
+      resultadopib = pib1 > pib2;
+      resultadopontotur = pontotur1 > pontotur2;
+      resultadodensidade = denspop1 < denspop2;
+      resultadopibcapta = pibcapta1 > pibcapta2;
 
   // Área para exibição dos dados da cidade
 
@@ -94,7 +103,12 @@ int main() {
       printf("PIB per capta: %.6f\n", pibcapta2);
 
       printf("\nResultado da comparação de cartas:\n");
-      printf("\nPopulação: %d\n", resultadopopulacao1);
+      printf("\nPopulação: %d\n", resultadopopulacao);
+      printf("\nÁrea: %d\n", resultadoarea);
+      printf("\nPIB: %d\n", resultadopib);
+      printf("\nPontos Turísticos: %d\n", resultadopontotur);
+      printf("\nDensidade: %d\n", resultadodensidade);
+      printf("\nPIB PerCapta: %d\n", resultadopibcapta);
 
 
 return 0;
