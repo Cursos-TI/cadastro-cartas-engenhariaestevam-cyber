@@ -3,6 +3,7 @@
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+//Comparar um atributo e exibir a carta vencedora!
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
@@ -11,15 +12,7 @@ int main() {
       char nome1[20], nome2[20];
       int populacao1, populacao2, pontotur1, pontotur2; 
       float area1, area2, pib1, pib2, denspop1,denspop2, pibcapta1, pibcapta2;
-      int resultadopopulacao;
-      int resultadoarea;
-      int resultadopib;
-      int resultadopontotur;
-      int resultadodensidade;
-      int resultadopibcapta;
-      float superpoder1, superpoder2;
-      float invdensidade1, invdensidade2;
-      int resultadosuperpoder;
+         
 
 
   // Área para entrada de dados
@@ -45,8 +38,8 @@ int main() {
       printf("Insira o número de pontos turísticos:\n");
       scanf("%d", &pontotur1);
 
-      denspop1 = populacao1 / area1;
-      pibcapta1 = pib1 / populacao1;
+      denspop1 = populacao1 / area1;//calculo da densidade Carta 1
+      pibcapta1 = pib1 / populacao1;//calculo do PIB PerCapta Carta 1
 
       printf("\nCadastro da carta 2\n");
       printf("Insira a letra corresponde ao estado:\n");
@@ -69,21 +62,11 @@ int main() {
 
       printf("Insira o número de pontos turísticos:\n");
       scanf("%d", &pontotur2);
+      
+      denspop2 = (float)populacao2 / area2; //calculo da densidade Carta 2
+      pibcapta2 = pib2 / (float)populacao2; //calculo do PIB PerCapta Carta 2
 
-      denspop2 = populacao2 / area2;
-      pibcapta2 = pib2 / populacao2;
-      resultadopopulacao = populacao1 > populacao2;
-      resultadoarea = area1 > area2;
-      resultadopib = pib1 > pib2;
-      resultadopontotur = pontotur1 > pontotur2;
-      resultadodensidade = denspop1 < denspop2;
-      resultadopibcapta = pibcapta1 > pibcapta2;
-      invdensidade1 = (denspop1 / 1);
-      invdensidade2 = (denspop2 / 1);
-      superpoder1 = (populacao1 + area1 + pib1 + pontotur1 + pibcapta1 + invdensidade1);
-      superpoder2 = (populacao2 + area2 + pib2 + pontotur2 + pibcapta2 + invdensidade2);
-
-
+     
   // Área para exibição dos dados da cidade
 
       printf("\nSeguem os dados da Carta 1:\n");
@@ -108,15 +91,21 @@ int main() {
       printf("Densidade: %.9f\n", denspop2);
       printf("PIB per capta: %.6f\n", pibcapta2);
 
-      printf("\nResultado da comparação de cartas:\n");
-      printf("\nPopulação: %d\n", resultadopopulacao);
-      printf("\nÁrea: %d\n", resultadoarea);
-      printf("\nPIB: %d\n", resultadopib);
-      printf("\nPontos Turísticos: %d\n", resultadopontotur);
-      printf("\nDensidade: %d\n", resultadodensidade);
-      printf("\nPIB PerCapta: %d\n", resultadopibcapta);
-      printf("\nSuperPoder: %d\n", resultadosuperpoder);
+      
+      //abaixo estão as lógicas para a comparação das cartas:
 
+      printf("\nAtributo - população:\n");
+      printf("\nCarta 1:%s\n",nome1);
+      printf("Carta 2:%s\n",nome2);
+
+      if(populacao1 > populacao2) //calculo da comparação do atributo População
+      {
+        printf("A Carta 1 foi a vencedora!\n");
+      }else
+      {
+        printf("A carta 2 foi a vencedora!\n");
+      }
+     
 
 return 0;
 } 
