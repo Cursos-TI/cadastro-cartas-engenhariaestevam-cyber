@@ -17,8 +17,9 @@ int main() {
       int resultadopontotur;
       int resultadodensidade;
       int resultadopibcapta;
-      int superpoder;
-      int invdensidade;
+      float superpoder1, superpoder2;
+      float invdensidade1, invdensidade2;
+      int resultadosuperpoder;
 
 
   // Área para entrada de dados
@@ -77,6 +78,11 @@ int main() {
       resultadopontotur = pontotur1 > pontotur2;
       resultadodensidade = denspop1 < denspop2;
       resultadopibcapta = pibcapta1 > pibcapta2;
+      invdensidade1 = (denspop1 / 1);
+      invdensidade2 = (denspop2 / 1);
+      superpoder1 = (populacao1 + area1 + pib1 + pontotur1 + pibcapta1 + invdensidade1);
+      superpoder2 = (populacao2 + area2 + pib2 + pontotur2 + pibcapta2 + invdensidade2);
+
 
   // Área para exibição dos dados da cidade
 
@@ -109,6 +115,7 @@ int main() {
       printf("\nPontos Turísticos: %d\n", resultadopontotur);
       printf("\nDensidade: %d\n", resultadodensidade);
       printf("\nPIB PerCapta: %d\n", resultadopibcapta);
+      printf("\nSuperPoder: %d\n", resultadosuperpoder);
 
 
 return 0;
