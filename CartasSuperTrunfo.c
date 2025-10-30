@@ -1,16 +1,13 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
-//Comparar um atributo e exibir a carta vencedora!
+
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
       char estado1, estado2;
       char codcarta1[3], codcarta2[3];
       char nome1[20], nome2[20];
-      int populacao1, populacao2, pontotur1, pontotur2; 
+      int populacao1, populacao2, pontotur1, pontotur2, opcao; 
       float area1, area2, pib1, pib2, denspop1,denspop2, pibcapta1, pibcapta2;
          
 
@@ -69,16 +66,7 @@ int main() {
      
   // Área para exibição dos dados da cidade
 
-      printf("\nSeguem os dados da Carta 1:\n");
-      printf("\nEstado: %c\n", estado1);
-      printf("Código da carta: %s\n", codcarta1);
-      printf("nome da cidade: %s\n", nome1);
-      printf("População: %d\n", populacao1);
-      printf("Área: %.3f\n", area1);
-      printf("PIB: %.3f\n", pib1);
-      printf("Pontos Turísticos: %d\n", pontotur1);
-      printf("Densidade: %.9f\n", denspop1);
-      printf("PIB per capta: %.6f\n", pibcapta1);
+      
 
       printf("\nSeguem os dados da Carta 2:\n");
       printf("\nEstado: %c\n", estado2);
@@ -90,6 +78,79 @@ int main() {
       printf("Pontos Turísticos: %d\n", pontotur2);
       printf("Densidade: %.9f\n", denspop2);
       printf("PIB per capta: %.6f\n", pibcapta2);
+
+
+      //Aqui estão as opções do Menu:
+
+      printf("Escolha o Atributo para comparação:\n");
+      printf("1 - Dados inseridos da carta 1\n");
+      printf("2 - Dados inseridos da carta 2\n");
+      printf("3 - Dados inseridos das duas cartas\n");
+      printf("4 - População\n");
+      printf("5 - Área\n");
+      printf("6 - PIB\n");
+      printf("7 - Número de Pontos Turísticos\n");
+      printf("8 - Densidade demográfica\n");
+
+      //Lógica do switch
+
+      switch (opcao)
+      {
+      case 1:
+        printf("\nSeguem os dados da Carta 1:\n");
+      printf("\nEstado: %c\n", estado1);
+      printf("Código da carta: %s\n", codcarta1);
+      printf("nome da cidade: %s\n", nome1);
+      printf("População: %d\n", populacao1);
+      printf("Área: %.3f\n", area1);
+      printf("PIB: %.3f\n", pib1);
+      printf("Pontos Turísticos: %d\n", pontotur1);
+      printf("Densidade: %.9f\n", denspop1);
+      printf("PIB per capta: %.6f\n", pibcapta1);
+        break;
+
+      case 2:
+        printf("\nSeguem os dados da Carta 2:\n");
+      printf("\nEstado: %c\n", estado2);
+      printf("Código da carta: %s\n", codcarta2);
+      printf("nome da cidade: %s\n", nome2);
+      printf("População: %d\n", populacao2);
+      printf("Área: %.3f\n", area2);
+      printf("PIB: %.3f\n", pib2);
+      printf("Pontos Turísticos: %d\n", pontotur2);
+      printf("Densidade: %.9f\n", denspop2);
+      printf("PIB per capta: %.6f\n", pibcapta2);
+        break;
+
+      case 3:
+        /* code */
+        break;
+
+      case 4:
+        /* code */
+        break;
+
+      case 5:
+        /* code */
+        break;
+
+      case 6:
+        /* code */
+        break;
+
+      case 7:
+        /* code */
+        break;
+
+      case 8:
+        /* code */
+        break;
+
+      default:
+        break;
+      }
+
+
 
       
       //abaixo estão as lógicas para a comparação das cartas:
