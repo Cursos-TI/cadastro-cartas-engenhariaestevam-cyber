@@ -190,14 +190,43 @@ int main() {
         break;
 
       case 7:
-        /* code */
+         if (pontotur1 > pontotur2){
+          printf("%s VS %s\n ", nome1, nome2);
+          printf("Atributo: Pontos Turísticos!\n");
+          printf("carta 1: %d ", pontotur1);
+          printf("Carta 2: %d \n", pontotur2);
+          printf("Carta 1 venceu!!\n");          
+        }else if (pontotur1 < pontotur2){
+          printf("%s VS %s\n ", nome1, nome2);
+          printf("Atributo: Pontos Turísticos!\n");
+          printf("carta 1: %d ", pontotur1);
+          printf("Carta 2: %d \n", pontotur2);
+          printf("Carta 2 venceu!!\n");  
+        }else{
+          printf("EMPATE!!!");
+        }
         break;
 
       case 8:
-        /* code */
+        if (denspop1 < denspop2){
+          printf("%s VS %s\n ", nome1, nome2);
+          printf("Atributo: Densidade Demográfica!\n");
+          printf("carta 1: %d ", denspop1
+          printf("Carta 2: %d \n", denspop2);
+          printf("Carta 1 venceu!!\n");          
+        }else if (denspop1 > denspop2){
+          printf("%s VS %s\n ", nome1, nome2);
+          printf("Atributo: Densidade demográfica!\n");
+          printf("carta 1: %d ", denspop1);
+          printf("Carta 2: %d \n", denspop2);
+          printf("Carta 2 venceu!!\n");  
+        }else{
+          printf("EMPATE!!!");
+        }
         break;
 
       default:
+          printf("Opção inválida!!\n"); 
         break;
       }
 return 0;
