@@ -211,7 +211,7 @@ int main() {
         if (denspop1 < denspop2){
           printf("%s VS %s\n ", nome1, nome2);
           printf("Atributo: Densidade Demográfica!\n");
-          printf("carta 1: %d ", denspop1
+          printf("carta 1: %d ", denspop1);
           printf("Carta 2: %d \n", denspop2);
           printf("Carta 1 venceu!!\n");          
         }else if (denspop1 > denspop2){
