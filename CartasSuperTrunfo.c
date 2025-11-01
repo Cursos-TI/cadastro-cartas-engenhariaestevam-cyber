@@ -157,14 +157,14 @@ int main() {
         if (area1 > area2){
           printf("%s VS %s\n ", nome1, nome2);
           printf("Atributo: Área!\n");
-          printf("carta 1: %d ", area1);
-          printf("Carta 2: %d \n", area2);
+          printf("carta 1: %.3f ", area1);
+          printf("Carta 2: %.3f \n", area2);
           printf("Carta 1 venceu!!\n");          
         }else if (area1 < area2){
        printf("%s VS %s\n ", nome1, nome2);
           printf("Atributo: Área!\n");
-          printf("carta 1: %d ", area1);
-          printf("Carta 2: %d \n", area2);
+          printf("carta 1: %.3f ", area1);
+          printf("Carta 2: %.3f \n", area2);
           printf("Carta 2 venceu!!\n");
         }else{
           printf("EMPATE!!!");
@@ -175,14 +175,14 @@ int main() {
          if (pib1 > pib2){
           printf("%s VS %s\n ", nome1, nome2);
           printf("Atributo: PIB!\n");
-          printf("carta 1: %d ", pib1);
-          printf("Carta 2: %d \n", pib2);
+          printf("carta 1: %.3f ", pib1);
+          printf("Carta 2: %.3f \n", pib2);
           printf("Carta 1 venceu!!\n");          
         }else if (pib1 < pib2){
           printf("%s VS %s\n ", nome1, nome2);
           printf("Atributo: PIB!\n");
-          printf("carta 1: %d ", pib1);
-          printf("Carta 2: %d \n", pib2);
+          printf("carta 1: %.3f ", pib1);
+          printf("Carta 2: %.3f \n", pib2);
           printf("Carta 2 venceu!!\n");  
         }else{
           printf("EMPATE!!!");
@@ -211,14 +211,14 @@ int main() {
         if (denspop1 < denspop2){
           printf("%s VS %s\n ", nome1, nome2);
           printf("Atributo: Densidade Demográfica!\n");
-          printf("carta 1: %d ", denspop1);
-          printf("Carta 2: %d \n", denspop2);
+          printf("carta 1: %.6f ", denspop1);
+          printf("Carta 2: %.6f \n", denspop2);
           printf("Carta 1 venceu!!\n");          
         }else if (denspop1 > denspop2){
           printf("%s VS %s\n ", nome1, nome2);
           printf("Atributo: Densidade demográfica!\n");
-          printf("carta 1: %d ", denspop1);
-          printf("Carta 2: %d \n", denspop2);
+          printf("carta 1: %.6f ", denspop1);
+          printf("Carta 2: %.6f \n", denspop2);
           printf("Carta 2 venceu!!\n");  
         }else{
           printf("EMPATE!!!");
